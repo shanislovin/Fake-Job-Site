@@ -1,21 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+<head lang="en">
     <meta charset="UTF-8">
-    <title>Web Timeline</title>
+    <meta name="shanis" content="Shanis Lovin">
+    <title>myfuture</title>
+    <link rel="stylesheet" href="static/style.css" type="text/css">
+</head>
 
-    <link title="timeline-styles" rel="stylesheet"
-          href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+<header>
+	<h1>myfuture.com</h1>
+</header>
 
-    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
-
-  </head>
 <body>
 
-<div id='timeline-embed' style="width: 100%; height: 600px"></div>
+<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
 
-<script type="text/javascript">
-  timeline = new TL.Timeline('timeline-embed', 'https://docs.google.com/spreadsheets/d/1vI3RIw6LfDQaUnW8ZT-NPYsX8ESGGQUl9DGnlXUiAw4/edit#gid=0');
-</script>
+<nav>
+	<ul>
+		<li><a href="#home">HOME</a></li>
+		<li><a href="#jobs">JOBS</a></li>
+		<li><a href="#about">ABOUT</a></li>
+		<li><a href="#contact">CONTACT</a></li>
+			
+		<li style="float:right"><a class="login" href="#login">LOG IN</a></li>
+		<i data-feather="user" style="float:right" class="user_ico"></i>
+			
+		<form class="search" style="float:right">
+			<input type="text" placeholder="enter keywords..">
+			<button type="submit"><i data-feather="search"></i></button>
+		</form>
+			
+		<script>feather.replace()</script>
+	</ul>
+</nav>
+	
+<div class="image_header">
+    <div class="image_text" style="float:left">choose your future.</div>
+</div>
+	
+
+<form class="sidenav" style="width:20%">
+	<div class="side_refine">Refine..</div>
+	<div class="side_title"><i data-feather="align-left" class="side_icon"></i>Category</div>
+		<select class="side_drop" style="width:220px">
+			<option selected disabled>Select industry..</option>
+			<option>Engineering</option>
+			<option>IT</option>
+			<option>Retail</option>
+			<option>Security</option>
+		</select>
+	<div class="side_title"><i data-feather="map-pin" class="side_icon"></i>Location</div>
+		<select class="side_drop" style="width:220px">
+			<option selected disabled>Select location..</option>
+			<option>Sydney City</option>
+			<option>North Sydney</option>
+			<option>Eastern Sydney</option>
+			<option>Western Sydney</option>
+		</select>
+	<script>feather.replace()</script>
+	<div><button type="submit">Search</button></div>
+</form>
+
+
+<div class="recent_jobs">RECENT JOBS 1 TO 5 OF 5</div>
+
+<div class="job">
+	<div class="location">Sydney NSW</div>
+    <div class="jobtitle">Junior Software Engineer</div>
+    <div class="company">MedicalMaster</div>
+    <div class="description">
+        You are passionate about technology and writing high quality software. Delivering
+        world class software that delights our customers and exceeds the expectations of...
+    </div>
+</div>
+<div class="job">
+    <div class="location">Sydney NSW</div>
+    <div class="jobtitle">Junior Software Engineer</div>
+    <div class="company">SXY Software</div>
+    <div class="description">
+        SXY Software is a leading provider of innovative software solutions for the
+        Global Pasta industry. We are currently seeking a Junior Software Engineer to...
+    </div>
+</div>
+
+<div class="job">
+    <div class="location">Pyrmont NSW</div>
+    <div class="jobtitle">Junior Software Engineer - Flight Management</div>
+    <div class="company">Ansett Airlines</div>
+    <div class="description">
+        Coordinating product development between several impacted developers across various
+        Ansett sites. Experience as software developer in C++ in a Linux...
+    </div>
+</div>
+
+
+<div class="job">
+    <div class="location">Macquarie Park NSW</div>
+    <div class="jobtitle">Junior Full Stack Developer</div>
+    <div class="company">Power People</div>
+    <div class="description">
+        As a Junior Full Stack Developer, you will report into the Lead Developer in
+        an Agile team and contribute to the development of world leading...
+    </div>
+</div>
+
+
+<div class="job">
+    <div class="location">Elsewood Park NSW</div>
+    <div class="jobtitle">Graduate - Junior Database SQL/BI Developer | BI Team Finance</div>
+    <div class="company">9G Futures</div>
+    <div class="description">
+        We are looking for a talented Grad to Junior level Database SQL Developer to
+        work with the Business Intelligence IT team developing greenfield and brownfield
+        data warehouse and in-house reporting solution to meet business requirements.
+    </div>
+</div>
+
 </body>
+
+<footer>
+	<p style="float:right" class="footer_title">Terms & Conditions</p>
+	<p class="footer_title"> contact us</p>
+    <p>phone: <a href="tel+614 1234 5678"> +614 1234 5678</a></p>
+  	<p>email: <a href="mailto:helpme@future.com">helpme@future.com</a>.</p>
+</footer>
+
 </html>
+
+<!-- Sources & References
+		https://feathericons.com/	all icons used/icon placing help
+		https://images.pexels.com/photos/450271/pexels-photo-450271.jpeg	below header image
+		https://stackoverflow.com/questions/30079188/image-under-nav-bar-html-css?	image header help
+		https://stackoverflow.com/questions/7777159/clip-crop-background-image-with-css?	image header help
+		https://www.nab.com.au/		image header inspiration
+		https://www.w3schools.com/howto/howto_css_searchbar.asp
+		https://stackoverflow.com/questions/35328108/adjusting-sidebar-and-navigation-bar-positions-in-css?
+		https://www.w3schools.com/howto/howto_css_search_button.asp		search bar help/inspiration
+		https://www.w3schools.com/css/css_navbar.asp	navigation bar help
+		https://drive.google.com/drive/my-drive		button inspiration/job cards inspiration
+		https://coolors.co/		color palette help
+		https://www.w3schools.com/tags/tag_option.asp	option/category/location help
+		https://www.w3schools.com/tags/tag_footer.asp	footer help
+		https://stackoverflow.com/questions/16056591/font-scaling-based-on-width-of-container? 		scaling help
+     -->
